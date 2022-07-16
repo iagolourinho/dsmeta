@@ -8,11 +8,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter
-@Setter
+
+@Data
+@NoArgsConstructor
 @Entity
 @Table(name = "tb_sales")
 public class Sale {
@@ -26,10 +27,5 @@ public class Sale {
 	private Double amount;
 	private LocalDate date;
 	
-	public Sale() {
-		
-	}
 	
-	
-
 }
